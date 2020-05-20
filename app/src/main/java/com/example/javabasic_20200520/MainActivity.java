@@ -22,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
         binding.okBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("메인화면","확인 버튼 클릭");
+                String inputmessage = binding.contentEdt.getText().toString();
+                Log.d("적은 내용",inputmessage);
+
+                binding.contentTxt.setText(inputmessage);
             }
         });
 
