@@ -7,6 +7,7 @@ import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.javabasic_20200520.databinding.ActivityMainBinding;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("적은 내용",inputmessage);
 
                 binding.contentTxt.setText(inputmessage);
+                Toast.makeText(MainActivity.this, "문구를 반영했습니다.", Toast.LENGTH_SHORT).show();
             }
         });
 
